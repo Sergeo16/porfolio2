@@ -69,7 +69,7 @@ const projects = [
 const Projects = () => {
     return (
         <div className="mt-10 p-5 md:px-[15%] bg-stone-950" id="Projects">
-            <Title title="Mes Projets" />
+            <Title title="Portfolio" />
             <div className="grid md:grid-cols-3 gap-4">
                 {projects.map((project) => (
                     <div key={project.id} className="bg-base-300 p-5 h-fit rounded-xl shadow-lg ">
