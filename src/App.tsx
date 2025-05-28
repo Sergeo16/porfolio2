@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Experiences from "./components/Expériences";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Services from "./components/Services";
 
 export default function App() {
   return (
@@ -14,13 +14,8 @@ export default function App() {
       </div>
 
       <About />
-      <Experiences />
+      <Services />
       <Projects/>
-
-      <div className="p-5 md:px-[15%]">
-        
-      </div>
-
       <Footer/>
 
       

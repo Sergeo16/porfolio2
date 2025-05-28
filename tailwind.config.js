@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        animImg: {
+          '0%': { transform: 'translateY(0%)' },
+          '50%': { transform: 'translateY(-2.4rem)' },
+          '100%': { transform: 'translateY(0%)' }
+        }
+      },
+      animation: {
+        'ssPortfolioImg': 'animImg 4s ease-in-out infinite'
+      }
+    },
   },
   plugins: [
     require('daisyui'),

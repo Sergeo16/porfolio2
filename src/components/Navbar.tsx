@@ -32,8 +32,8 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#Experiences" className="btn hover:bg-accent btn-sm btn-ghost">
-                Expériences
+              <a href="#Services" className="btn hover:bg-accent btn-sm btn-ghost">
+                Services
               </a>
             </li>
             <li>
@@ -68,8 +68,8 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#Experiences" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                Expériences
+              <a href="#Services" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
+                Services
               </a>
             </li>
             <li>
