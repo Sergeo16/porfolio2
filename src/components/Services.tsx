@@ -9,7 +9,7 @@ const services = [
     title: "Développement d'applications",
     description:
       "Je conçois des applications web modernes, performantes et sécurisées avec des technologies comme React, Next.js, TypeScript et Django. Mon objectif : transformer vos idées en solutions efficaces et intuitives qui répondent parfaitement à vos besoins métier.",
-    link: "#contact",
+    link: "#Contact",
   },
    {
     id: 2,
@@ -17,7 +17,7 @@ const services = [
     title: "Administration des réseaux informatiques",
     description:
       "Je déploie, sécurise et administre des réseaux fiables et évolutifs. Avec une expertise CCNA, je garantis une connectivité optimale, une gestion efficace des ressources et une réponse rapide aux incidents pour assurer la continuité de vos services.",
-    link: "#contact",
+    link: "#Contact",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const services = [
     title: "Maintenance informatique et Support Technique",
     description:
       "Problèmes techniques ? Je vous accompagne avec des solutions rapides, durables et adaptées. Diagnostic, réparation, optimisation : je veille à la santé de vos équipements et à la satisfaction de vos utilisateurs.",
-    link: "#contact",
+    link: "#Contact",
   },
   {
     id: 4,
@@ -33,15 +33,15 @@ const services = [
     title: "Formations en informatique",
     description:
       "Je propose des formations pratiques et adaptées à tous niveaux : bureautique, réseaux, développement web ou cybersécurité. Avec une pédagogie claire et des résultats concrets, je vous aide à monter en compétence à votre rythme.",
-    link: "#",
-    target: "_blank",
+    link: "#Contact",
+    // target: "_blank",
   },
 ];
 
 const Services: FC = () => {
   return (
     <section id="Services" className="min-h-screen py-0 px-6 md:px-16 text-gray-100">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 mt-10">
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 mt-10">
         Mes <span className="text-accent">Services</span>
       </h2>
 

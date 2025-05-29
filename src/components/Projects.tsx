@@ -66,8 +66,8 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="mt-10 p-5 md:px-[15%] bg-stone-950" id="Projects">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 mt-10">
+        <section className="mt-10 p-5 pb-20 md:px-[15%] bg-stone-950" id="Projects">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 mt-10">
                 Mes <span className="text-accent">  Projets</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-4">

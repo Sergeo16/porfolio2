@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-import { Mail } from "lucide-react";
+import { MdOutlineContactPhone } from "react-icons/md";
 import img_ss2 from "../assets/img_ss2.jpg";
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
             href="#Contact"
             className="flex items-center justify-center gap-2 px-6 py-3 rounded-full md:text-2xl border-4 border-accent text-accent transition duration-200 ease-in-out hover:bg-accent hover:text-white hover:border-white md:w-fit mt-20"
             >
-            <Mail className="md:w-10 md:h-10 mr-2" />
+            <MdOutlineContactPhone className="md:w-10 md:h-10 mr-2" />
             Contactez-moi
         </a>
       </div>

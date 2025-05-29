@@ -41,6 +41,11 @@ const Navbar = () => {
                 Portfolio
               </a>
             </li>
+            <li>
+              <a href="#Contact" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
+                Contact
+              </a>
+            </li>
           </ul>
 
           {/* Menu Mobile Toggle */}
@@ -75,6 +80,11 @@ const Navbar = () => {
             <li>
               <a href="#Projects" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
                 Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#Contact" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
+                Contact
               </a>
             </li>
           </ul>

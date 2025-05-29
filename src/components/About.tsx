@@ -1,31 +1,41 @@
 import img_ss1 from '../assets/img_ss1.jpg'
-import { CalendarSync, LetterText, Paintbrush, ArrowDownFromLine } from "lucide-react";
+import { ArrowDownFromLine } from "lucide-react";
+import { SiFrontendmentor, SiBackendless } from "react-icons/si";
+import { FaNetworkWired } from "react-icons/fa6";
+import { GrVmMaintenance } from "react-icons/gr";
+
 
 const aboutSections = [
     {
         id: 1,
         title: "Développeur Frontend",
         description: "HTML, CSS, Javascript, React JS, React Native, Bootstrap, Tailwind CSS.",
-        icon: <LetterText className="text-accent scale-150" />,
+        icon: <SiFrontendmentor className="text-accent scale-150" />,
     },
     {
         id: 2,
         title: "Développeur Backend",
         description: "Python, Django, Next JS, Node JS.",
-        icon: <CalendarSync className="text-accent scale-150" />,
+        icon: <SiBackendless className="text-accent scale-150" />,
     },
     {
         id: 3,
         title: "Réseaux Informatiques",
         description: "Switch, Routeur, Point d'accès, Parefeu, Serveur. Certifié CCNA.",
-        icon: <Paintbrush className="text-accent scale-150" />,
+        icon: <FaNetworkWired  className="text-accent scale-150" />,
+    },
+    {
+        id: 4,
+        title: "Maintenance Informatique et Support",
+        description: "Installation, configuration, réparation des ordinateurs, assiatance et conseils.",
+        icon: <GrVmMaintenance className="text-accent scale-150" />,
     },
 ];
 
 const About = () => {
     return (
         <section className="bg-stone-950 p-10 mb-10 mt-10" id="About">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
                 A <span className="text-accent">Propos</span>
             </h2>
             
@@ -36,7 +46,7 @@ const About = () => {
                     />
                 </div>
 
-                <div className="md:ml-4 space-y-4 animate-pulse">
+                <div className="md:ml-4 space-y-4">
                     {aboutSections.map((section) => (
                         <div key={section.id}
                             className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl"
