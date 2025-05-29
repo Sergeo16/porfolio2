@@ -13,32 +13,32 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#Home"
-            className="flex items-center font-bold text-3xl md:text-xl"
+            className="flex items-center font-bold text-xl md:text-3xl"
           >
             <Gem className="mr-2 text-accent" />
             SS<span className="text-accent">DevApp</span>
           </a>
 
           {/* Menu Desktop */}
-          <ul className="hidden md:flex space-x-4">
+          <ul className="hidden text-3xl md:flex items-center space-x-4 md:pb-3">
             <li>
-              <a href="#Home" className="btn hover:bg-accent btn-sm btn-ghost">
+              <a href="#Home" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
                 Accueil
               </a>
             </li>
             <li>
-              <a href="#About" className="btn hover:bg-accent btn-sm btn-ghost">
-                À propos
+              <a href="#About" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
+                A propos
               </a>
             </li>
             <li>
-              <a href="#Services" className="btn hover:bg-accent btn-sm btn-ghost">
+              <a href="#Services" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
                 Services
               </a>
             </li>
             <li>
-              <a href="#Projects" className="btn hover:bg-accent btn-sm btn-ghost">
-                Porfolio
+              <a href="#Projects" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
+                Portfolio
               </a>
             </li>
           </ul>
@@ -64,7 +64,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#About" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                À propos
+                A propos
               </a>
             </li>
             <li>

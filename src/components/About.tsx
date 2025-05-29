@@ -1,4 +1,3 @@
-import Title from "./Title"
 import img_ss1 from '../assets/img_ss1.jpg'
 import { CalendarSync, LetterText, Paintbrush, ArrowDownFromLine } from "lucide-react";
 
@@ -25,9 +24,12 @@ const aboutSections = [
 
 const About = () => {
     return (
-        <div className="bg-stone-950 p-10 mb-10 md:mb-32" id="About">
-            <Title title="À propos" />
-            <div className="flex justify-center items-center ">
+        <section className="bg-stone-950 p-10 mb-10 mt-10" id="About">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+                A <span className="text-accent">Propos</span>
+            </h2>
+            
+            <div className="flex justify-center items-center mt-20">
                 <div className="hidden md:block">
                     <img src={img_ss1} alt="" className="border-8 border-accent animate-ssPortfolioImg w-96 object-cover rounded-xl"
                     style={{borderRadius : "80%"}}
@@ -61,7 +63,7 @@ const About = () => {
                 <ArrowDownFromLine className="md:w-10 md:h-10 mr-2" />
                 Télécharger mon CV
             </a>
-        </div>
+        </section>
     )
 }
 

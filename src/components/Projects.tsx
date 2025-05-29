@@ -1,5 +1,3 @@
-import Title from "./Title"
-
 import img1 from '../assets/projects/1.png';
 import img2 from '../assets/projects/2.png';
 import img3 from '../assets/projects/3.png';
@@ -68,8 +66,10 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="mt-10 p-5 md:px-[15%] bg-stone-950" id="Projects">
-            <Title title="Portfolio" />
+        <section className="mt-10 p-5 md:px-[15%] bg-stone-950" id="Projects">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 mt-10">
+                Mes <span className="text-accent">  Projets</span>
+            </h2>
             <div className="grid md:grid-cols-3 gap-4">
                 {projects.map((project) => (
                     <div key={project.id} className="bg-base-300 p-5 h-fit rounded-xl shadow-lg ">
@@ -105,7 +105,7 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 
