@@ -40,7 +40,7 @@ const services = [
 
 const Services: FC = () => {
   return (
-    <section id="Services" className="min-h-screen py-0 px-6 md:px-16 text-gray-100">
+    <section id="Services" className="min-h-screen md:min-h-0 px-6 md:px-16 text-gray-100 md:pb-20 md:pt-0">
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 mt-10">
         Mes <span className="text-accent">Services</span>
       </h2>
@@ -56,7 +56,7 @@ const Services: FC = () => {
             <p className="text-base mb-6">{service.description}</p>
             <a
               href={service.link}
-              target={service.target}
+              // target={service.target}
               className="inline-block border border-white text-white hover:bg-accent hover:border-4 transition-colors duration-200 rounded-full px-6 py-3 text-lg mt-4"
             >
               {service.id === 4 ? "En savoir plus" : "Contactez-moi"}
