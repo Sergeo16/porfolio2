@@ -1,5 +1,3 @@
-"use client"; // si tu es dans Next.js App Router
-
 import { useState } from "react";
 import { Gem, Menu, X } from "lucide-react";
 
@@ -8,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 bg-stone-950 shadow-md px-4 py-2">
+      <section className="fixed top-0 left-0 w-full z-50 bg-stone-950 shadow-md px-4 py-2">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           {/* Logo */}
           <a
@@ -20,32 +18,25 @@ const Navbar = () => {
           </a>
 
           {/* Menu Desktop */}
-          <ul className="hidden text-3xl md:flex items-center space-x-4 md:pb-3">
-            <li>
-              <a href="#Home" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a href="#About" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
-                A propos
-              </a>
-            </li>
-            <li>
-              <a href="#Services" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#Projects" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="#Contact" className="btn hover:bg-accent btn-sm btn-ghost md:text-2xl">
-                Contact
-              </a>
-            </li>
+          <ul className="hidden md:flex items-center space-x-6 md:pb-3">
+            {[
+              { href: "#Home", label: "Accueil" },
+              { href: "#About", label: "A propos" },
+              { href: "#Services", label: "Services" },
+              { href: "#Projects", label: "Portfolio" },
+              { href: "#Contact", label: "Contact" },
+            ].map(({ href, label }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  className="relative inline-block mx-2 py-1 text-white md:text-2xl hover:text-accent transition duration-300
+                            before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 
+                            before:bg-accent before:transition-all before:duration-300 hover:before:w-full"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
 
           {/* Menu Mobile Toggle */}
@@ -56,37 +47,31 @@ const Navbar = () => {
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
-      </div>
+      </section>
 
-      {/* Menu Mobile Dropdown */}
+     {/* Menu Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden fixed top-16 left-0 w-full bg-stone-950 z-40 shadow-md px-4 py-2">
-          <ul className="flex flex-col space-y-2">
-            <li>
-              <a href="#Home" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a href="#About" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                A propos
-              </a>
-            </li>
-            <li>
-              <a href="#Services" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#Projects" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="#Contact" className="btn hover:bg-accent btn-sm btn-ghost" onClick={() => setIsOpen(false)}>
-                Contact
-              </a>
-            </li>
+          <ul className="flex flex-col space-y-4 items-start">
+            {[
+              { href: "#Home", label: "Accueil" },
+              { href: "#About", label: "A propos" },
+              { href: "#Services", label: "Services" },
+              { href: "#Projects", label: "Portfolio" },
+              { href: "#Contact", label: "Contact" },
+            ].map(({ href, label }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className="relative inline-block py-1 text-white text-xl hover:text-accent transition duration-300
+                            before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 
+                            before:bg-accent before:transition-all before:duration-300 hover:before:w-full"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
